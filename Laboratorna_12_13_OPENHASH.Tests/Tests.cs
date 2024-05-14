@@ -14,7 +14,7 @@ public class Tests
     public void AddStudent_SearchExistingStudent_ReturnsTrue()
     {
         // Arrange
-        string surname = "Smith";
+        string surname = "Порошенко";
         int[] grades = { 85, 90, 92 };
 
         // Act
@@ -29,7 +29,7 @@ public class Tests
     public void AddStudent_DeleteStudent_SearchDeletedStudent_ReturnsFalse()
     {
         // Arrange
-        string surname = "Johnson";
+        string surname = "Порошенко";
         int[] grades = { 78, 80, 85 };
 
         // Act
@@ -44,7 +44,7 @@ public class Tests
     public void AddStudent_DeleteNonExistingStudent_ReturnsFalse()
     {
         // Arrange
-        string nonExistingSurname = "NonExisting";
+        string nonExistingSurname = "Порошенко";
 
         // Act & Assert
         Assert.IsFalse(hashTable.Delete(nonExistingSurname));
